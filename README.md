@@ -1,6 +1,6 @@
 # browserUI
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
-Use of identifier Knime does not imply any affiliation with or endorsement by them.   
+Use of name Knime does not imply any affiliation with or endorsement by the company.   
 
 The following instructions summarize the directions from the knime website for setting 
 up the knime source code in eclipse 4.6.1 for examination or modification of the code. 
@@ -38,44 +38,44 @@ The setup below merely assembles all the original source code needed later for t
 
 ********* Getting the basic Knime application source code ***********  
  
-the instructions to setup a knime development environment are here
-    https://github.com/knime/knime-sdk-setup	
+the instructions to setup a knime development environment are here  
+    https://github.com/knime/knime-sdk-setup	 
 After setting up by cloning the knime-sdk-setup project, and following directions under  
-    Getting Started  
+      Getting Started  
 You should then have three projects appearing in Eclipse  
-    org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
+      org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
 Next clone the knime-core project, as per instructions here   
-    Work with Source of KNIME Analytics Platform Extensions  
+      Work with Source of KNIME Analytics Platform Extensions  
 This will get you knime core and knime base ("Extensions" is just a technical term,  
 core and base are the main projects that comprise the knime application)  
 under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
-
+    
 The following additional setup must be followed to use the knime labs code from
 jsView to handle the results of a workflow and display them in a browser window. 
 jsView converts the Knime table data structue to javascript and is also configurable. 
 There is an additional hack to get this to work, but first it needs to be available 
-and compiling in the IDE
-
-*************** Getting the jsView from Knime Labs *******************
-
+and compiling in the IDE  
+  
+*************** Getting the jsView from Knime Labs *******************  
+  
 From Eclipse menu, select  
-Help, Install New Software  
+      Help, Install New Software  
 As per instructions on knime page https://www.knime.com/downloads/update  
-copy update url from that page, http://update.knime.org/analytics-platform/3.4/ as of this writing  
-and enter url in the input field labeled 
+      copy update url from that page, http://update.knime.org/analytics-platform/3.4/ as of Oct 2017  
+and enter url in the input field labeled   
 
-    work with:
-enter any name you want in pop up window with url  
-if you've previously used the url to add software it will appear as a selection already  
+      work with:  
+Enter any name you want in pop up window with url    
+If you've previously used the url to add software it will appear as a selection already  
     
-under Knime Labs Extensions select 
+Under Knime Labs Extensions select 
 
-     KNIME Javascript Views  
-     KNIME Webservice Client  
-under Sources select
+      KNIME Javascript Views  
+      KNIME Webservice Client  
+Under Sources select   
 
-     Source for KNIME Javascript Views  
-     Source for KNIME Webservice Client  
+      Source for KNIME Javascript Views  
+      Source for KNIME Webservice Client  
   
 complete process by following prompts in wizard to install  
 
