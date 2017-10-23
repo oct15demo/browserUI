@@ -1,7 +1,7 @@
 # browserUI
+   oh
+<table height="10"><tr><td><div width=30>a</div>is this red</td></tr></table>
 
-<div style="position:absolute;right:50">is this red</div>
-<table border="0"><tr><td width=50 border="0"><td>spaced</tr></table>
 <pre>
    some pre code
 </pre>
