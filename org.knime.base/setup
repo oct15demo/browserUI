@@ -1,9 +1,31 @@
-interesting to see code here too https://bitbucket.org/KNIME/knime-core/overview
+The following instructions summarize the directions from the knime website for setting 
+up the knime source code in eclipse 4.6.1 for examination or modification of the code. 
+The Knime version is 3.4.2, and please note the Knime warns against using Eclipse 4.6.2 
+due to problems compiling with that later version. These files and setup were assembled 
+mid October 2017.
+
+The purpose of this project is to expose a version of Knime that demonstrates a 
+browser workflow UI in any web browser, while leveraging existing code. 
+The goal was to create a working prototype with as little code modification as possible, 
+so that expanding the code to encompass ever more functionality beyond a proof of 
+concept could be done in an efficient manner.
+
+The main components are the org.knime.base and org.knime.core. Additionally, the 
+org.knime.js.core and org.knime.js.views are incorporated into the base project 
+to be able to present the output of a workflow in the the browser window. 
+js.views is a component from Knime Labs, meaning it is an additional package not 
+yet included in the standard distribution.
 
 The following setup will get a new clean knime codebase with the Knime code required 
 to create a browser UI version of the knime application. The setup of additional code and
-modifications needed to implement the browser UI will be addressed in a separate how-to file.
-This setup below merely assembles all the original source code needed for the big hack.
+modifications needed to implement the browser UI will be added to this repository 
+as the project progresses. 
+
+A simplified working version of a browser workflow UI can be found here:
+http://www.acmetoolanddie.com/demo/showtime.html
+http://www.acmetoolanddie.com/demo/connectarrow.html
+
+The setup below merely assembles all the original source code needed for the big hack.
 
 ********* Getting the basic Knime application source code ***********
  
@@ -156,3 +178,6 @@ which identified
    org.knime.ext.svg
 as the missing dependency to add, saving some probable trial and error, fortunately this had been posted in the
 forum just 13 days prior on Oct 10, 2017
+
+************************************************************************
+interesting to see code here too https://bitbucket.org/KNIME/knime-core/overview
