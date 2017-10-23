@@ -1,54 +1,54 @@
 # browserUI
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
-Use of identifier Knime does not imply any affiliation with or endorsement by them. 
+Use of identifier Knime does not imply any affiliation with or endorsement by them.   
 
 The following instructions summarize the directions from the knime website for setting 
 up the knime source code in eclipse 4.6.1 for examination or modification of the code. 
 The Knime version is 3.4.2, and please note that Knime warns against using Eclipse 4.6.2 
 due to problems compiling with that later version. These files and setup were assembled 
-mid October 2017.
+mid October 2017.  
 
 The purpose of this project is to expose a version of Knime that demonstrates a 
 browser workflow creation UI in any web browser, while leveraging existing code. 
 The goal is to create a working prototype with as little code modification as possible, 
 so that expanding the code to encompass ever more functionality beyond a proof of 
-concept can be done in an efficient manner.
+concept can be done in an efficient manner.  
 
 The main components are org.knime.base and org.knime.core. Additionally, 
 org.knime.js.core and org.knime.js.views are incorporated into the base project 
 to be able to present the output of a workflow in the browser window.  
 js.views is a component of Knime Labs, meaning it is an additional package not 
-yet included in the standard distribution.
+yet included in the standard distribution.  
 
 The following setup will get a new clean knime codebase with the Knime code required 
 to create a browser UI version of the knime application. The setup of additional code and
 modifications needed to implement the browser UI will be added to this repository 
-as the project progresses. 
+as the project progresses.   
 
-A simplified working version of a browser workflow UI can be found here:
+A simplified working version of a browser workflow UI can be found here:  
 
 http://www.acmetoolanddie.com/demo/showtime.html
 http://www.acmetoolanddie.com/demo/connectarrow.html
 
 The Java code running this demo is as yet unavailable while it is being refactored.
 Likewise the javascript also appears in a rough POC version and is also currently 
-being refactored. 
+being refactored.   
 
-The setup below merely assembles all the original source code needed later for the big hack.
+The setup below merely assembles all the original source code needed later for the big hack.  
 
-********* Getting the basic Knime application source code ***********
+********* Getting the basic Knime application source code ***********  
  
-the instructions to setup a knime development environment are here 
-   https://github.com/knime/knime-sdk-setup
-After setting up by cloning the knime-sdk-setup project, and following directions under
-   Getting Started
-You should then have three projects appearing in Eclipse
-   org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.
-Next clone the knime-core project, as per instructions here 
-   Work with Source of KNIME Analytics Platform Extensions
-This will get you knime core and knime base ("Extensions" is just a technical term,
-core and base are the main projects that comprise the knime application)
-under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects
+the instructions to setup a knime development environment are here     
+...https://github.com/knime/knime-sdk-setup  
+After setting up by cloning the knime-sdk-setup project, and following directions under  
+...Getting Started  
+You should then have three projects appearing in Eclipse  
+...org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
+Next clone the knime-core project, as per instructions here   
+...Work with Source of KNIME Analytics Platform Extensions  
+This will get you knime core and knime base ("Extensions" is just a technical term,  
+core and base are the main projects that comprise the knime application)  
+under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
 
 The following additional setup must be followed to use the knime labs code from
 jsView to handle the results of a workflow and display them in a browser window. 
