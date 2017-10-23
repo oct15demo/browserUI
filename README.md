@@ -62,46 +62,56 @@ and compiling in the IDE
 
 *************** Getting the jsView from Knime Labs *******************
 
-From Eclipse menu, select
-Help, Install New Software
-As per instructions on knime page https://www.knime.com/downloads/update
-copy update url from that page, http://update.knime.org/analytics-platform/3.4/ as of this writing
+From Eclipse menu, select  
+Help, Install New Software  
+As per instructions on knime page https://www.knime.com/downloads/update  
+copy update url from that page, http://update.knime.org/analytics-platform/3.4/ as of this writing  
 and enter url in the input field labeled 
-   work with:
-enter any name you want in pop up window with url
-if you've previously used the url to add software it will appear as a selection already
+
+    work with:
+enter any name you want in pop up window with url  
+if you've previously used the url to add software it will appear as a selection already  
     
-under Knime Labs Extensions select  
+under Knime Labs Extensions select 
+
      KNIME Javascript Views  
      KNIME Webservice Client  
-under Sources select   
+under Sources select
+
      Source for KNIME Javascript Views  
      Source for KNIME Webservice Client  
   
-complete process by following prompts in wizard to install
+complete process by following prompts in wizard to install  
 
-*********** Hacky Way of Installing jsView source code ***************
+*********** Hacky Way of Installing jsView source code ***************  
 
 from the eclipse installation, go to dir
+
    Eclipse.app/Contents/Eclipse/plugins
 make a directory somewhere to unpack the js.views jar, for example
+
    mkdir Documents/jsview
 copy the js.views jar from the plugins dir to tmp dir
+
    cp org.knime.js.views.source_3.4.1.v201709070952.jar Documents/jsview
 unjar the jar
+
    jar xf org.knime.js.views.source_3.4.1.v201709070952.jar
 go to wherever you cloned the knime core project
+
    cd /Applications/KnimeFromGit
 here you would find two directories
+
    knime-core   knime-sdk-setup
 go to org/knime dir within org.knime.base project   
    cd knime-core/org.knime.base/src/org/knime
 copy the js.views files here, recursively with -r option
    cp -r Documents/jsview/org/knime/js .
 
-there are a few plugin dependencies needed still
-open the MANIFEST.MF file found under the META-INF in the org.knime.base project
-go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins
+there are a few plugin dependencies needed still  
+open the MANIFEST.MF file found under the META-INF in the org.knime.base project  
+go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins 
+
   org.knime.js.core
   com.google.guava
   org.knime.ext.svg
