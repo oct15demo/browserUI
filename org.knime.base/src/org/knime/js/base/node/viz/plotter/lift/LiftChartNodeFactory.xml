@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<knimeNode icon="../../js.png" type="Visualizer" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+	<name>JavaScript Lift Chart</name>
+	
+	<shortDescription>
+	    A lift chart using a JavaScript based charting library.
+	</shortDescription>
+		
+	<fullDescription>
+		<intro>Creates a lift chart. Additionally, a chart for the cumulative 
+        percent of responses captured is shown. A lift chart is used to evaluate 
+        a predictive model. The higher the lift (the difference between the "lift" line 
+        and the base line), the better performs the predictive model.
+        The lift is the ratio between the results obtained with and without the 
+        predictive model. 
+        It is calculated as number of positive hits (e .g. responses) divided by
+        the average number of positives without model.
+        The data table must have a column containing probabilities and a nominal 
+        column, containing the actual labels.
+        At first, the data is sorted by probability, divided into deciles,
+        then the actual labels are counted and the average rate is calculated.
+        </intro>
+        <tab name="Data Options">
+	        <option name="Response Column">Nominal column containing the actual labels, e. g. if a person responded</option>
+	        <option name="Probability Column">Numeric column containing the predicted score in probabilities of the model</option>
+	        <option name="Positive label (hits)">The label for a positive value (hit).</option>
+	        <option name="Interval width in %">The width in which the data is separated before counting.</option>
+	        <option name="Ignore missing values">If checked, the missing values in Probability columns will be ignored without a warning message. 
+	        Otherwise, they will be sorted to the end of the curves with a corresponding warning message.<br/>
+	        Missing values in Response column are ignored in any case.</option>
+        </tab>
+        <tab name="General Plot Options">
+            <option name="Hide in wizard">If the view should be hidden in the wizard execution.</option>
+            <option name="Create image at outport">If an image is supposed to be rendered during execute for the upper outport. Disable this option if image is not needed or creation is too time consuming.</option>
+            <option name="Width of image (in px)">The width of the generated SVG image.</option>
+            <option name="Height of image (in px)">The height of the generated SVG image.</option>
+            <option name="Line width (in px)">The width of the shown lines.</option>
+            <option name="Smoothing">The smoothing algorithm for the shown lines.</option>
+
+            <option name="Resize view to fill window">Setting this option resizes the view to the available area of the window. If disabled the view size is static according to the set width and height.</option>
+            <option name="Background color">The color of the background of the image.</option>
+            <option name="Data area color">The background color of the data area, within the axes.</option>
+            <option name="Show grid">If an additional grid is being rendered at the axes tick positions.</option>
+            <option name="Grid color">The color of the grid.</option>
+            <option name="Show warnings in view">If checked, warning messages will be displayed in the view when they occur.</option>
+        </tab>
+        <tab name="Axis Configuration">
+            <option name="Label for x-axis" optional="true">The label for the x-axis. If left blank, the selected column name is displayed.</option>
+            <option name="Label for y-axis" optional="true">The label for the y-axis. If left blank, the selected column name is displayed.</option>
+            <option name="Show color legend">Switches the legend on/off. The legend shows the mapping between colors used in the view and the respective column names.</option>
+        </tab>
+        <tab name="View Controls">
+            <option name="Enable view edit controls">If checked all edit controls selected below will be rendered in the view. Unchecking this option disables all edit controls.</option>
+            <option name="Enable title edit controls">Renders a text box to change the chart title in the view.</option>
+            <option name="Enable subtitle edit controls">Renders a text box to change the chart subtitle in the view.</option>
+            <option name="Enable label edit for x-axis">Renders a text box to change x-axis label in the view.</option>
+            <option name="Enable label edit for y-axis">Renders a text box to change y-axis label in the view.</option>
+            <option name="Enable toggle between views">Renders a control to switch between Lift Chart and Cumulative Gain Chart modes.</option>
+            <option name="Enable selection of smoothing">Renders a selector of smoothing algorithm.</option>
+        </tab>
+        
+	</fullDescription>
+	
+	<interactiveView name="Lift Chart">
+		Displays a lift chart visualization.
+	</interactiveView>
+	<ports>
+		<inPort index="0" name="Display data">Data table with data to display.</inPort>
+		<outPort index="0" name="Image">SVG image rendered by the JavaScript implementation of the lift chart.</outPort>
+		<outPort index="1" name="Input data and view selection">Data table containing the input data appended with a column, that represents the selection made in the lift chart view.</outPort>
+	</ports>	
+</knimeNode>
