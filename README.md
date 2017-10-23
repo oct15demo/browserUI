@@ -1,38 +1,42 @@
 # browserUI
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
-Use of name Knime does not imply any affiliation with or endorsement by the company.   
+Use of name the Knime does not imply any affiliation with or endorsement by the company.   
 
-The following instructions summarize the directions from the knime website for setting 
-up the knime source code in eclipse 4.6.1 for examination or modification of the code. 
+The following instructions summarize the directions from the Knime website for setting 
+up the Knime source code in Eclipse 4.6.1 for examination or modification of the code. 
 The Knime version is 3.4.2, and please note that Knime warns against using Eclipse 4.6.2 
-due to problems compiling with that later version. These files and setup were assembled 
+due to problems compiling with that version. These files and setup were assembled 
 mid October 2017.  
 
 The purpose of this project is to expose a version of Knime that demonstrates a 
-browser workflow creation UI in any web browser, while leveraging existing code. 
+browser workflow UI. Workflow creation and creation is to be accessible through 
+any web browser, the engineering of which is designed to leverage existing code. 
 The goal is to create a working prototype with as little code modification as possible, 
-so that expanding the code to encompass ever more functionality beyond a proof of 
-concept can be done in an efficient manner.  
+so that expanding the code to encompass ever more functionality, far beyond the proof of 
+concept, can be done in the most efficient manner.  
 
-The main components are org.knime.base and org.knime.core. Additionally, 
-org.knime.js.core and org.knime.js.views are incorporated into the base project 
-to be able to present the output of a workflow in the browser window.  
-js.views is a component of Knime Labs, meaning it is an additional package not 
-yet included in the standard distribution.  
+The main components of the Knime application and this setup are org.knime.base and org.knime.core. 
+Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project for now, 
+as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to 
+display the output of a workflow in the browser window.  
+js.views is a component of Knime Labs, meaning it is an additional package not yet included in the
+standard distribution.  
 
-The following setup will get a new clean knime codebase with the Knime code required 
-to create a browser UI version of the knime application. The setup of additional code and
-modifications needed to implement the browser UI will be added to this repository 
-as the project progresses.   
+The setup described below installs a new clean Knime codebase of all the source code that needs to be 
+modified to create a browser UI version. 
 
-A simplified working version of a browser workflow UI can be found here:  
+The additional code and modifications already written to create an early version of the browser UI will 
+be added to this repository soon.  The Java code is currently running a demo in the links given below. 
+That modifications and additions to the code are temporarily unavailable while being refactored, having 
+been produced in a very experimental manner. Likewise the javascript which also appears in the rough POC 
+version is also currently being refactored and will appear in a proper repository shortly.
+
+The simplified working version of the browser UI can be found here:  
 
 http://www.acmetoolanddie.com/demo/showtime.html  
 http://www.acmetoolanddie.com/demo/connectarrow.html  
 
-The Java code running this demo is as yet unavailable while it is being refactored.
-Likewise the javascript also appears in a rough POC version and is also currently 
-being refactored.   
+   
 
 The setup below merely assembles all the original source code needed later for the big hack.  
 
