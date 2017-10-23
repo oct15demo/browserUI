@@ -1,4 +1,7 @@
 # browserUI
+All product and company names are trademarks™ or registered® trademarks of their respective holders. 
+Use of identifier Knime does not imply any affiliation with or endorsement by them. 
+
 The following instructions summarize the directions from the knime website for setting 
 up the knime source code in eclipse 4.6.1 for examination or modification of the code. 
 The Knime version is 3.4.2, and please note that Knime warns against using Eclipse 4.6.2 
