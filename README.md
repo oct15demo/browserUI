@@ -66,14 +66,14 @@ and enter url in the input field labeled
    work with:
 enter any name you want in pop up window with url
 if you've previously used the url to add software it will appear as a selection already
+    
+under Knime Labs Extensions select  
+   KNIME Javascript Views  
+   KNIME Webservice Client  
+under Sources select   
+   Source for KNIME Javascript Views  
+   Source for KNIME Webservice Client  
   
-under Knime Labs Extensions select 
-   KNIME Javascript Views
-   KNIME Webservice Client
-under Sources select 
-   Source for KNIME Javascript Views
-   Source for KNIME Webservice Client
-
 complete process by following prompts in wizard to install
 
 *********** Hacky Way of Installing jsView source code ***************
