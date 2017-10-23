@@ -39,7 +39,10 @@ The setup below merely assembles all the original source code needed later for t
 ********* Getting the basic Knime application source code ***********  
  
 the instructions to setup a knime development environment are here
-	https://github.com/knime/knime-sdk-setup  
+''' javascript
+    var this=that;
+    https://github.com/knime/knime-sdk-setup <span>
+'''
 After setting up by cloning the knime-sdk-setup project, and following directions under  
 	Getting Started  
 You should then have three projects appearing in Eclipse  
