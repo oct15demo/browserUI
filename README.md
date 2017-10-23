@@ -41,11 +41,11 @@ The setup below merely assembles all the original source code needed later for t
 the instructions to setup a knime development environment are here     
 ***https://github.com/knime/knime-sdk-setup  
 After setting up by cloning the knime-sdk-setup project, and following directions under  
-***Getting Started  
+    Getting Started  
 You should then have three projects appearing in Eclipse  
-***org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
+    org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
 Next clone the knime-core project, as per instructions here   
-***Work with Source of KNIME Analytics Platform Extensions  
+    Work with Source of KNIME Analytics Platform Extensions  
 This will get you knime core and knime base ("Extensions" is just a technical term,  
 core and base are the main projects that comprise the knime application)  
 under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
