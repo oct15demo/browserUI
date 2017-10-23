@@ -1,13 +1,4 @@
 # browserUI
-   oh
-<table height="10"><tr><td><div width=30>a</div>is this red</td></tr></table>
-
-<pre>
-   some pre code
-</pre>
-<blockquote>
-	some bloc
-</blockquote>
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
 Use of identifier Knime does not imply any affiliation with or endorsement by them.   
 
@@ -48,18 +39,13 @@ The setup below merely assembles all the original source code needed later for t
 ********* Getting the basic Knime application source code ***********  
  
 the instructions to setup a knime development environment are here
-
-```javascript
-   var this=that;
-https://github.com/knime/knime-sdk-setup <span>
-```	
-	
+    https://github.com/knime/knime-sdk-setup	
 After setting up by cloning the knime-sdk-setup project, and following directions under  
-	Getting Started  
+    Getting Started  
 You should then have three projects appearing in Eclipse  
-	org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
+    org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
 Next clone the knime-core project, as per instructions here   
-	Work with Source of KNIME Analytics Platform Extensions  
+    Work with Source of KNIME Analytics Platform Extensions  
 This will get you knime core and knime base ("Extensions" is just a technical term,  
 core and base are the main projects that comprise the knime application)  
 under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
