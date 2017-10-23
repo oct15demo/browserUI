@@ -209,8 +209,8 @@ additional permissions according to Sec. 7 of the GPL, see the file LICENSE.TXT,
 It is located in the same directory as the immediate subdirectories of 
 this repository. 
 
-***************************************************************************************
-                 How to indent on an .md page? (on a mac)
+**************************************************************************************  
+------------------  How to indent on an .md page? (on a mac)  ----------------------  
 https://stackoverflow.com/questions/6046263/how-to-indent-a-few-lines-in-markdown-markup     
 	
-&nbsp; (Unicode U+00A0) literal characters can be easily typed on macOS with <kbd>option</kbd>-<kbd>spacebar</kbd>. And code editors with good invisibles support (such as TextMate) will show normal spaces as a faint bullet and non-breaking-spaces as a bolder bullet (but still fainter than the text color). ← I think an editor with good invisibles viz is essential for Markdown, especially because of MD's two-spaces-at-end-of-line=<br/> syntax. – Slipp D. Thompson Jun 30 '16 at 2:58 
+\&nbsp; (Unicode U+00A0) literal characters can be easily typed on macOS with <kbd>option</kbd>-<kbd>spacebar</kbd>. And code editors with good invisibles support (such as TextMate) will show normal spaces as a faint bullet and non-breaking-spaces as a bolder bullet (but still fainter than the text color). ← I think an editor with good invisibles viz is essential for Markdown, especially because of MD's two-spaces-at-end-of-line=<br/> syntax. – Slipp D. Thompson Jun 30 '16 at 2:58 
