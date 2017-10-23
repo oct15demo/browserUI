@@ -140,8 +140,8 @@ As per instructions on https://www.knime.com/downloads/update, the link appear h
    KNIME Analytics Platform: download KNIME Update Site
 The actual url of the link being   
    https://update.knime.org/analytics-platform/UpdateSite_latest34.zip
-create to separate directory to hold the zip file and subsequent unzipped dirs and 
-files, then find the dir with 
+create a separate directory to hold the zip file and subsequent unzipped dirs and 
+files, then find the needed source file with shell command
    find ./|grep js.core
    .//org.knime.update.org/plugins/org.knime.js.core.source_3.4.1.v201709070952.jar
    .//org.knime.update.org/plugins/org.knime.js.core_3.4.1.v201709070952.jar
@@ -151,7 +151,7 @@ follow similar procedure (hack) used for jsView. cp source jar to a dir
 make a directory somewhere to unpack the js.views jar, for example
    mkdir Documents/jscore
 copy the js.core jar from the plugins dir to tmp dir
-   cp org.knime.js.core.source_3.4.1.v201709070952.jar Documents/jsview
+   cp org.knime.js.core.source_3.4.1.v201709070952.jar Documents/jscore
 unjar the jar
    jar xf org.knime.js.core.source_3.4.1.v201709070952.jar
 go to wherever you cloned the knime core project
