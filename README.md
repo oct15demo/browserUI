@@ -1,4 +1,12 @@
 # browserUI
+
+<div style="color:red">is this red</div>
+<pre>
+   some pre code
+</pre>
+<blockquote>
+	some bloc
+</blockquote>
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
 Use of identifier Knime does not imply any affiliation with or endorsement by them.   
 
