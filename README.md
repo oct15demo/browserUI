@@ -103,12 +103,12 @@ copy the js.views files here, recursively with -r option
 
 there are a few plugin dependencies needed still  
 open the MANIFEST.MF file found under the META-INF in the org.knime.base project  
-go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins 
-
-  org.knime.js.core
-  com.google.guava
-  org.knime.ext.svg
-  org.apache.commons.lang3
+go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins     
+    
+      org.knime.js.core    
+      com.google.guava    
+      org.knime.ext.svg    
+      org.apache.commons.lang3    
   
 Also you may have to move the org.knime.core dependency to the the top (select and use up button)
 
@@ -172,15 +172,15 @@ copy the js.views files here, recursively with -r option
 
 again there are a several plugin dependencies needed still
 open the MANIFEST.MF file found under the META-INF in the org.knime.base project
-go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins
-  com.fasterxml.jackson.core.jackson-core
-  com.fasterxml.jackson.core.jackson-databind
-  org.eclipse.jface
-  org.elcipse.ui.workbench
-  org.apache.commons.codec
-  org.openqa.selenium
-  org.knime.ext.phantomjs
-  org.knime.time
+go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins    
+      com.fasterxml.jackson.core.jackson-core    
+      com.fasterxml.jackson.core.jackson-databind    
+      org.eclipse.jface    
+      org.elcipse.ui.workbench    
+      org.apache.commons.codec    
+      org.openqa.selenium    
+      org.knime.ext.phantomjs    
+      org.knime.time    
 
  
 ******* extraneous note on identifying missing dependencies**********
