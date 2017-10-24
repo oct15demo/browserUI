@@ -17,9 +17,8 @@ so later expanding code to encompass more full functionality can be done in the 
 The main components of the Knime application, and this setup, are org.knime.base and org.knime.core. 
 Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project
 as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to 
-display the output of workflows in the browser.  
-js.views is a component of Knime Labs, meaning it is an additional package not yet included in the
-standard distribution.  
+display the output of workflows in the browser. js.views is a component of Knime Labs, meaning it is 
+an additional package not yet included in the standard distribution.  
 
 The setup described below installs a new clean Knime codebase of the source code needing modification 
 to create a browser UI version. 
@@ -76,7 +75,6 @@ Under Knime Labs Extensions select
       KNIME Javascript Views  
       KNIME Webservice Client  
 Under Sources select   
-
       Source for KNIME Javascript Views  
       Source for KNIME Webservice Client  
   
@@ -91,16 +89,12 @@ make a directory somewhere to unpack the js.views jar, for example
 
    mkdir Documents/jsview
 copy the js.views jar from the plugins dir to tmp dir
-
    cp org.knime.js.views.source_3.4.1.v201709070952.jar Documents/jsview
 unjar the jar
-
    jar xf org.knime.js.views.source_3.4.1.v201709070952.jar
 go to wherever you cloned the knime core project
-
    cd /Applications/KnimeFromGit
 here you would find two directories
-
    knime-core   knime-sdk-setup
 go to org/knime dir within org.knime.base project   
    cd knime-core/org.knime.base/src/org/knime
