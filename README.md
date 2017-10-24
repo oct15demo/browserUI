@@ -31,8 +31,8 @@ javascript used in the POC is also currently being refactored, to be added when 
 
 The simplified working version of the browser UI can be found here:  
 
-http://www.acmetoolanddie.com/demo/showtime.html  guide
-http://www.acmetoolanddie.com/demo/connectarrow.html  demo
+http://www.acmetoolanddie.com/demo/showtime.html  guide    
+http://www.acmetoolanddie.com/demo/connectarrow.html  demo    
 
    
 
