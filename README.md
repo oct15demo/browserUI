@@ -9,32 +9,31 @@ due to problems compiling with that version. These files and setup were assemble
 mid October 2017.  
 
 The purpose of this project is to expose a version of Knime that demonstrates a 
-browser workflow UI. Workflow creation and creation is to be accessible through 
-any web browser, the engineering of which is designed to leverage existing code. 
+browser workflow UI. Workflow creation and execution is to be made accessible through 
+any web browser, the engineered to leverage existing code. 
 The goal is to create a working prototype with as little code modification as possible, 
-so that expanding the code to encompass ever more functionality, far beyond the proof of 
-concept, can be done in the most efficient manner.  
+so later expanding code to encompass more full functionality can be done in the most efficient manner.  
 
-The main components of the Knime application and this setup are org.knime.base and org.knime.core. 
-Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project for now, 
+The main components of the Knime application, and this setup, are org.knime.base and org.knime.core. 
+Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project
 as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to 
-display the output of a workflow in the browser window.  
+display the output of workflows in the browser.  
 js.views is a component of Knime Labs, meaning it is an additional package not yet included in the
 standard distribution.  
 
-The setup described below installs a new clean Knime codebase of all the source code that needs to be 
-modified to create a browser UI version. 
+The setup described below installs a new clean Knime codebase of the source code needing modification 
+to create a browser UI version. 
 
-The additional code and modifications already written to create an early version of the browser UI will 
-be added to this repository soon.  The Java code is currently running a demo in the links given below. 
-That modifications and additions to the code are temporarily unavailable while being refactored, having 
-been produced in a very experimental manner. Likewise the javascript which also appears in the rough POC 
-version is also currently being refactored and will appear in a proper repository shortly.
+The additional code and modifications, already written to create an early version of the browser UI, will 
+be added to this repository soon.  The Java code is currently running a demo located in the links given below. 
+The modifications and additions to code of that demo are temporarily unavailable, awaiting completion of an
+extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the 
+javascript used in the POC is also currently being refactored, to be added when done.
 
 The simplified working version of the browser UI can be found here:  
 
-http://www.acmetoolanddie.com/demo/showtime.html  
-http://www.acmetoolanddie.com/demo/connectarrow.html  
+http://www.acmetoolanddie.com/demo/showtime.html  guide
+http://www.acmetoolanddie.com/demo/connectarrow.html  demo
 
    
 
