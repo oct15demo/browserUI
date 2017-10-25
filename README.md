@@ -65,13 +65,11 @@ From Eclipse menu, select
 As per instructions on knime page https://www.knime.com/downloads/update  
       copy update url from that page, http://update.knime.org/analytics-platform/3.4/ as of Oct 2017  
 and enter url in the input field labeled   
-
       work with:  
 Enter any name you want in pop up window with url    
 If you've previously used the url to add software it will appear as a selection already  
     
-Under Knime Labs Extensions select 
-
+Under Knime Labs Extensions select   
       KNIME Javascript Views  
       KNIME Webservice Client  
 Under Sources select   
