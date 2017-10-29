@@ -1,6 +1,6 @@
 # browserUI
 All product and company names are trademarks™ or registered® trademarks of their respective holders. 
-Use of name the Knime does not imply any affiliation with or endorsement by the company.   
+Use of the name Knime does not imply any affiliation with or endorsement by the company.   
 
 The instructions given below comprise the needed steps to set up Knime source code in Eclipse.  The source code includes  that made availble from installing the Knime SDK ( the entire SDK from https://github.com/knime/knime-sdk-setup ), the basic source code of the Knime application ( base and core projects from https://github.com/knime/knime-core ) and additional Knime source code for javascript related classes (java classes and some javascript libs from js.view and js.core jars). You will find below a summarization of or reference to the instructions from the Knime website, to clone and import code into Eclipse 4.6.1, for the purpose of adding custom nodes, and  examination or modification of the code. Additional instructions are then provided pertaining to access the source code of the javascript related classes as well.  The Knime version is 3.4.2, and please note that Knime warns against using Eclipse 4.6.2  due to problems compiling with that version. These files and setup were assembled and current as of mid October 2017.  
 
