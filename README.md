@@ -31,9 +31,9 @@ You should then have three projects appearing in Eclipse
 At this point, one can either clone and then import the org.knime.base and org.knime.core Eclipse projects from this repo, cloning with:    
     git clone https://github.com/oct15demo/browserUI.git
    
-   or
+                             or
    
-Follw the directions below to retrieve more code form the Knime repo. Those directions will leave you with the necessary Knime code in Eclipse, before any additions and modifications have been made that are necessary for the browser UI.    
+Follw the directions below to retrieve the code from the Knime repo. Those directions will leave you with the necessary Knime code in Eclipse, before any additions and modifications have been made that are necessary for the browser UI.    
 
 Note: As of this writing, Oct 30, as stated earlier, this repo http://github.com/oct15demo/browserUI/ also doesn't yet include the additions and modifications for the browser UI, as they are still in the process of being refactored. However, the unaltered required javascript sources files are much easier to set up from this browserUI repo because they're already added to the org.knime.base project, no extra steps are required. But to continue to check out everything fresh and unaltered from Knime:
       
