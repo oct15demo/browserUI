@@ -68,9 +68,8 @@ complete process by following prompts in wizard to install
 
 *********** Hacky Way of Installing jsView source code ***************  
 
-from the eclipse installation, go to dir
-
-   Eclipse.app/Contents/Eclipse/plugins    
+from the eclipse installation, go to dir    
+    Eclipse.app/Contents/Eclipse/plugins    
 make a directory somewhere to unpack the js.views jar, for example        
     mkdir Documents/jsview    
 copy the js.views jar from the plugins dir to tmp dir    
