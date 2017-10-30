@@ -17,7 +17,7 @@ A simple working version of the browser UI can already be found here (a big hack
 http://www.acmetoolanddie.com/demo/showtime.html  guide    
 http://www.acmetoolanddie.com/demo/connectarrow.html  demo    
 
-Directions below merely assemble all the original Knime source code of jars that are modified for the big hack.  
+Directions below merely assemble all the original Knime source code of jars that are modified in the big hack.  
 
 ********* Getting the basic Knime application source code ***********  
  
