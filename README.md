@@ -117,8 +117,8 @@ as described above in
 \*\*\*\*Getting the jsView from Knime Labs\*\*\*\*
 
 However, the source is missing from the sources list and must presently be obtained 
-by downloading the zipped file of all the plugins, roughly 3 GB, and as unzip 
-retains the zip file, you'll need 6.1 GB.    
+by downloading the zipped file of all the plugins, roughly 3 GB, and as the unzip 
+utility retains the zip file, be aware you'll actually need 6.1 GB of free space.        
 As per instructions on https://www.knime.com/downloads/update, the link appear here
    KNIME Analytics Platform: download KNIME Update Site
 The actual url of the link being   
