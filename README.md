@@ -73,7 +73,7 @@ from the eclipse installation, go to dir
    Eclipse.app/Contents/Eclipse/plugins
 make a directory somewhere to unpack the js.views jar, for example    
     
-    mkdir Documents/jsview
+    mkdir Documents/jsview    
 copy the js.views jar from the plugins dir to tmp dir    
     cp org.knime.js.views.source_3.4.1.v201709070952.jar Documents/jsview    
 unjar the jar    
