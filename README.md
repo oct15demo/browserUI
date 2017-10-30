@@ -28,8 +28,8 @@ After setting up by cloning the knime-sdk-setup project, and following direction
 You should then have three projects appearing in Eclipse  
       org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.
       
-At this point, one can either clone and import the org.knime.base and org.knime.core Eclipse projects from this repo    
-git clone https://github.com/oct15demo/browserUI.git
+At this point, one can either clone and then import the org.knime.base and org.knime.core Eclipse projects from this repo, cloning with:    
+    git clone https://github.com/oct15demo/browserUI.git
    
    or
    
