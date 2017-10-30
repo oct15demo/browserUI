@@ -119,36 +119,35 @@ as described above in
 However, the source is missing from the sources list and must presently be obtained 
 by downloading the zipped file of all the plugins, roughly 3 GB, and as the unzip 
 utility retains the zip file, be aware you'll actually need 6.1 GB of free space.        
-As per instructions on https://www.knime.com/downloads/update, the link appear here
-   KNIME Analytics Platform: download KNIME Update Site
-The actual url of the link being   
-   https://update.knime.org/analytics-platform/UpdateSite_latest34.zip
-create a separate directory to hold the zip file and subsequent unzipped dirs and 
-files, then find the needed source file with shell command
-   find ./|grep js.core
-   .//org.knime.update.org/plugins/org.knime.js.core.source_3.4.1.v201709070952.jar
-   .//org.knime.update.org/plugins/org.knime.js.core_3.4.1.v201709070952.jar
-
+As per instructions on https://www.knime.com/downloads/update, the link appears as    
+    KNIME Analytics Platform: download KNIME Update Site
+The actual url of the link being       
+    https://update.knime.org/analytics-platform/UpdateSite_latest34.zip
+create a separate directory to hold the zip file and subsequent unzipped dirs and files, then find the needed source file with shell command    
+    find ./|grep js.core
+    .//org.knime.update.org/plugins/org.knime.js.core.source_3.4.1.v201709070952.jar
+    .//org.knime.update.org/plugins/org.knime.js.core_3.4.1.v201709070952.jar
+    
 follow similar procedure (hack) used for jsView. cp source jar to a dir
-
-make a directory somewhere to unpack the js.views jar, for example
-   mkdir Documents/jscore
-copy the js.core jar from the plugins dir to tmp dir
-   cp org.knime.js.core.source_3.4.1.v201709070952.jar Documents/jscore
-unjar the jar
-   jar xf org.knime.js.core.source_3.4.1.v201709070952.jar
-go to wherever you cloned the knime core project
-   cd /Applications/KnimeFromGit
-here you would find two directories
-   knime-core   knime-sdk-setup
-go to org/knime dir within org.knime.base project   
-   cd knime-core/org.knime.base/src/org/knime
-copy the js.views files here, recursively with -r option
-   cp -r Documents/jscore/org/knime/js .
-
-again there are a several plugin dependencies needed still
-open the MANIFEST.MF file found under the META-INF in the org.knime.base project
-go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins    
+     
+make a directory somewhere to unpack the js.views jar, for example    
+    mkdir Documents/jscore    
+copy the js.core jar from the plugins dir to tmp dir    
+    cp org.knime.js.core.source_3.4.1.v201709070952.jar Documents/jscore    
+unjar the jar    
+    jar xf org.knime.js.core.source_3.4.1.v201709070952.jar    
+go to wherever you cloned the knime core project    
+    cd /Applications/KnimeFromGit    
+here you would find two directories    
+    knime-core   knime-sdk-setup    
+go to org/knime dir within org.knime.base project    
+    cd knime-core/org.knime.base/src/org/knime    
+copy the js.views files here, recursively with -r option    
+    cp -r Documents/jscore/org/knime/js .    
+    
+again there are a several plugin dependencies needed still    
+open the MANIFEST.MF file found under the META-INF in the org.knime.base project     
+go to the dependencies tab (tabs appear on bottom of file window) and add the following plugins        
       com.fasterxml.jackson.core.jackson-core    
       com.fasterxml.jackson.core.jackson-databind    
       org.eclipse.jface    
@@ -161,15 +160,14 @@ go to the dependencies tab (tabs appear on bottom of file window) and add the fo
  
 ******* extraneous note on identifying missing dependencies**********
 
-Looking to identify missing dependency to find import in 7 jsView files for
-   import org.knime.base.data.xml.SvgCell;
-Using knime search yielded no result for org.knime.base.data.xml.SvgCell or org.knime.base.data.xml, 
-searching for just SvgCell will work, but pasting in google came up with this:
+Looking to identify missing dependency to find import in 7 jsView files for    
+    import org.knime.base.data.xml.SvgCell;
+Using knime search yielded no result for org.knime.base.data.xml.SvgCell or org.knime.base.data.xml, searching for just SvgCell will work, but pasting in google came up with this:    
   
-   https://www.knime.com/forum/knime-developers/cannot-find-orgknimebasedataxml-package-anywhere
+    https://www.knime.com/forum/knime-developers/cannot-find-orgknimebasedataxml-package-anywhere
 
-which identified 
-   org.knime.ext.svg
+which identified   
+    org.knime.ext.svg  
 as the missing dependency to add, saving some probable trial and error, fortunately this had been posted in the
 forum just 13 days prior on Oct 10, 2017
 
