@@ -10,7 +10,7 @@ The main components of the Knime application and this setup, aside from the Knim
 
 The setup described below installs the Knime source code needing modification to create a browser UI. 
 
-The additional code and modification of Knime code to create the browser UI is presently unavailable from this public repo, awaiting completion of an extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the  javascript used in the POC is also currently being refactored, to be added here when that task is complete.
+The additional code and modification of Knime code to create the browser UI is presently unavailable from this public repo, awaiting completion of an extensive refactoring task.  That new and modified code (not created by Knime) was produced in a very experimental manner, likewise the javascript (not created by Knime) used in the POC (proof of concept) is also currently being refactored, to be added here when that task is complete.
 
 A simple working version of the browser UI can already be found here (a big hack):  
 
