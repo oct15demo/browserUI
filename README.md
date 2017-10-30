@@ -6,7 +6,7 @@ The instructions given below comprise the needed steps to set up Knime source co
 
 The purpose of this project is to expose a version of Knime that demonstrates a browser workflow UI. The browser workflow UI is a UI for workflow creation and execution, accessible through any web browser. The version being featured with links from this repo has been engineered to leverage existing code. The goal has been to create a working prototype with as little code modification as possible. The least modification means expanding the code later to encompass full functionality can presumably be done in the most efficient and scalable manner.  
 
-The main components of the Knime application, and this setup aside from the Knime SDK, are org.knime.base and org.knime.core. Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to  display the output of workflows in the browser. js.views is a component of Knime Labs, meaning it is  an additional package not yet included in the standard distribution.  
+The main components of the Knime application and this setup, aside from the Knime SDK, are org.knime.base and org.knime.core. Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to  display the output of workflows in the browser. js.views is a component of Knime Labs, meaning it is  an additional package not yet included in the standard distribution.  
 
 The setup described below installs the Knime source code needing modification to create a browser UI. 
 
