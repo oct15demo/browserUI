@@ -131,12 +131,12 @@ utility retains the zip file, be aware you'll actually need 6.1 GB of free space
 As per instructions on https://www.knime.com/downloads/update, the link appears as    
     KNIME Analytics Platform: download KNIME Update Site    
 The actual url of the link being       
-    https://update.knime.org/analytics-platform/UpdateSite_latest34.zip
-create a separate directory to hold the zip file and subsequent unzipped dirs and files, then find the needed source file with shell command    
-    find ./|grep js.core
-    .//org.knime.update.org/plugins/org.knime.js.core.source_3.4.1.v201709070952.jar
-    .//org.knime.update.org/plugins/org.knime.js.core_3.4.1.v201709070952.jar
-    
+    https://update.knime.org/analytics-platform/UpdateSite_latest34.zip    
+create a separate directory to hold the zip file and subsequent unzipped dirs and files, then find the needed source file with shell command        
+    find ./|grep js.core    
+    .//org.knime.update.org/plugins/org.knime.js.core.source_3.4.1.v201709070952.jar        
+    .//org.knime.update.org/plugins/org.knime.js.core_3.4.1.v201709070952.jar        
+        
 follow similar procedure (hack) used for jsView. cp source jar to a dir
      
 make a directory somewhere to unpack the js.views jar, for example    
