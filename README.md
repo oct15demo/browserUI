@@ -6,29 +6,18 @@ The instructions given below comprise the needed steps to set up Knime source co
 
 The purpose of this project is to expose a version of Knime that demonstrates a browser workflow UI. The browser workflow UI is a UI for workflow creation and execution, accessible through any web browser. The version being featured with links from this repo has been engineered to leverage existing code. The goal has been to create a working prototype with as little code modification as possible. The least modification means expanding the code later to encompass full functionality can presumably be done in the most efficient and scalable manner.  
 
-The main components of the Knime application, and this setup, are org.knime.base and org.knime.core. 
-Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project
-as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to 
-display the output of workflows in the browser. js.views is a component of Knime Labs, meaning it is 
-an additional package not yet included in the standard distribution.  
+The main components of the Knime application, and this setup aside from the Knime SDK, are org.knime.base and org.knime.core. Additionally, org.knime.js.core and org.knime.js.views are incorporated into the base project as a convenient shortcut (or hack) instead being set up as thier own projects. They are needed to  display the output of workflows in the browser. js.views is a component of Knime Labs, meaning it is  an additional package not yet included in the standard distribution.  
 
-The setup described below installs a new clean Knime codebase of the source code needing modification 
-to create a browser UI version. 
+The setup described below installs the Knime source code needing modification to create a browser UI. 
 
-The additional code and modifications, already written to create an early version of the browser UI, will 
-be added to this repository soon.  The Java code is currently running a demo located in the links given below. 
-The modifications and additions to code of that demo are temporarily unavailable, awaiting completion of an
-extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the 
-javascript used in the POC is also currently being refactored, to be added when done.
+The additional code and modifications of Knime to create the browser UI is currently running a demo located in the links given below. The modifications and additions to Knime code for that demo are presently unavailable, awaiting completion of an extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the  javascript used in the POC is also currently being refactored, to be added here when that task is complete.
 
-The simplified working version of the browser UI can be found here:  
+The simplified working version of the browser UI can be found here (a big hack):  
 
 http://www.acmetoolanddie.com/demo/showtime.html  guide    
 http://www.acmetoolanddie.com/demo/connectarrow.html  demo    
 
-   
-
-The setup below merely assembles all the original source code needed later for the big hack.  
+Directions below merely assemble all the original Knime source code needed later for the big hack.  
 
 ********* Getting the basic Knime application source code ***********  
  
@@ -40,15 +29,11 @@ You should then have three projects appearing in Eclipse
       org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
 Next clone the knime-core project, as per instructions here   
       Work with Source of KNIME Analytics Platform Extensions  
-This will get you knime core and knime base ("Extensions" is just a technical term,  
-core and base are the main projects that comprise the knime application)  
+This will get you knime core and knime base ("Extensions" is just a technical term, core and base are the main projects that comprise the knime application)  
 under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
     
-The following additional setup must be followed to use the knime labs code from
-jsView to handle the results of a workflow and display them in a browser window. 
-jsView converts the Knime table data structue to javascript and is also configurable. 
-There is an additional hack to get this to work, but first it needs to be available 
-and compiling in the IDE  
+The following additional setup must be followed to use the knime labs code from jsView to handle the results of a workflow and display them in a browser window. jsView converts the Knime table data structue to javascript and is also configurable. 
+There is an additional hack to get this to work, but first it needs to be available and compiling in the IDE  
   
 *************** Getting the jsView from Knime Labs *******************  
   
