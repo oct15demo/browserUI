@@ -10,14 +10,14 @@ The main components of the Knime application and this setup, aside from the Knim
 
 The setup described below installs the Knime source code needing modification to create a browser UI. 
 
-The additional code and modifications of Knime to create the browser UI is currently running a demo located in the links given below. The modifications and additions to Knime code for that demo are presently unavailable, awaiting completion of an extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the  javascript used in the POC is also currently being refactored, to be added here when that task is complete.
+The additional code and modification of Knime code to create the browser UI is presently unavailable from this public repo, awaiting completion of an extensive refactoring task.  The code was originally produced in a very experimental manner, likewise the  javascript used in the POC is also currently being refactored, to be added here when that task is complete.
 
-The simplified working version of the browser UI can be found here (a big hack):  
+A simple working version of the browser UI can already be found here (a big hack):  
 
 http://www.acmetoolanddie.com/demo/showtime.html  guide    
 http://www.acmetoolanddie.com/demo/connectarrow.html  demo    
 
-Directions below merely assemble all the original Knime source code needed later for the big hack.  
+Directions below merely assemble all the original Knime source code needed later to create or modify the big hack.  
 
 ********* Getting the basic Knime application source code ***********  
  
