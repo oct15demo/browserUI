@@ -129,7 +129,7 @@ However, the source is missing from the sources list and must presently be obtai
 by downloading the zipped file of all the plugins, roughly 3 GB, and as the unzip 
 utility retains the zip file, be aware you'll actually need 6.1 GB of free space.        
 As per instructions on https://www.knime.com/downloads/update, the link appears as    
-    KNIME Analytics Platform: download KNIME Update Site
+    KNIME Analytics Platform: download KNIME Update Site    
 The actual url of the link being       
     https://update.knime.org/analytics-platform/UpdateSite_latest34.zip
 create a separate directory to hold the zip file and subsequent unzipped dirs and files, then find the needed source file with shell command    
