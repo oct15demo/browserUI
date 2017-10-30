@@ -71,7 +71,7 @@ complete process by following prompts in wizard to install
 from the eclipse installation, go to dir    
     Eclipse.app/Contents/Eclipse/plugins    
 make a directory somewhere to unpack the js.views jar, for example        
-    mkdir Documents/jsview    
+    mkdir /Users/name/Documents/jsview    
 copy the js.views jar from the plugins dir to tmp dir    
     cp org.knime.js.views.source_3.4.1.v201709070952.jar Documents/jsview    
 unjar the jar    
@@ -83,7 +83,7 @@ here you would find two directories
 go to org/knime dir within org.knime.base project       
     cd knime-core/org.knime.base/src/org/knime    
 copy the js.views files here, recursively with -r option    
-    cp -r Documents/jsview/org/knime/js .    
+    cp -r /Users/name/Documents/jsview/org/knime/js .    
     
 there are a few plugin dependencies needed still      
 open the MANIFEST.MF file found under the META-INF in the org.knime.base project  
@@ -140,7 +140,7 @@ create a separate directory to hold the zip file and subsequent unzipped dirs an
 follow similar procedure (hack) used for jsView. cp source jar to a dir
      
 make a directory somewhere to unpack the js.views jar, for example    
-    mkdir Documents/jscore    
+    mkdir /Users/name/Documents/jscore    
 copy the js.core jar from the plugins dir to tmp dir    
     cp org.knime.js.core.source_3.4.1.v201709070952.jar Documents/jscore    
 unjar the jar    
@@ -150,9 +150,9 @@ go to wherever you cloned the knime core project
 here you would find two directories    
     knime-core   knime-sdk-setup    
 go to org/knime dir within org.knime.base project    
-    cd knime-core/org.knime.base/src/org/knime    
+    cd knime-core/org.knime.base/src/org/knime/js    
 copy the js.views files here, recursively with -r option    
-    cp -r Documents/jscore/org/knime/js .    
+    cp -r /Users/name/Documents/jscore/org/knime/js/core .    
     
 again there are a several plugin dependencies needed still    
 open the MANIFEST.MF file found under the META-INF in the org.knime.base project     
