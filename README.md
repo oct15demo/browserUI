@@ -113,7 +113,8 @@ Here is an example of code after modification with hack and some documentation o
 the org.knime.js.core directory org.knime.js.core_3.4.1.v201709070952 
 that contains a jar of class files can be added from Eclipse menu, select
    Help, Install New Software
-as described above in ***Getting the jsView from Knime Labs***
+as described above in   
+\*\*\*\*Getting the jsView from Knime Labs\*\*\*\*
 
 But the source is missing from the sources list and must presently be obtained 
 by downloading the zipped file of all the plugins, roughly 3 GB, and as unzip 
