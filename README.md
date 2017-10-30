@@ -26,14 +26,24 @@ the instructions to setup a knime development environment are here
 After setting up by cloning the knime-sdk-setup project, and following directions under  
       Getting Started  
 You should then have three projects appearing in Eclipse  
-      org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.  
-Next clone the knime-core project, as per instructions here   
+      org.apache.xmlbeans, org.knime.example.node, and org.knime.sdk.setup.
+      
+At this point, one can either clone and import the org.knime.base and org.knime.core Eclipse projects from this repo
+   
+   or
+   
+Follw the directions below to retrieve more code form the Knime repo. Those directions will leave you with the necessary Knime code in Eclipse, before any additions and modifications have been made that are necessary for the browser UI.    
+
+Note: As of this writing, Oct 30, as stated earlier, this repo github.com/oct15demo/browserUI/ also doesn't yet include the additions and modifications for the browser UI, as they are still in the process of being refactored. However, the unaltered required javascript sources files are much easier to set up from this browserUI repo because they're already added to the org.knime.base project, no extra steps are required. But to continue to check out everything fresh and unaltered from Knime:
+      
+Clone the knime-core project, as per instructions on that setup page under heading   
       Work with Source of KNIME Analytics Platform Extensions  
-This will get you knime core and knime base ("Extensions" is just a technical term, core and base are the main projects that comprise the knime application)  
-under the knime-core directory, you will find and import org.knime.base and org.knime.core eclipse projects  
+"Extensions" is just a technical term, org.knime.core and org.knime.base are the main projects that comprise the knime application. You will find the org.knime.base and org.knime.core eclipse projects under the knime-core directory after cloning that repository.  
+    https://github.com/knime/knime-core
     
-The following additional setup must be followed to use the knime labs code from jsView to handle the results of a workflow and display them in a browser window. jsView converts the Knime table data structue to javascript and is also configurable. 
-There is an additional hack to get this to work, but first it needs to be available and compiling in the IDE  
+The following additional setup steps must be followed to check out the js.view code from Knime Labs, and to import the js.core source code. The js.core and js.view sources are needed to process results of browser UI workflows if one is to display those results in a browser window. jsView converts the Knime table data structue to javascript and is also configurable.    
+
+Checking out the code below directly from Knime does not include the additions and modifications necessary for the browser UI. It is given as a reference to anyone wishing to understand how the environment is originally configured, and the process might be necessary to merge future versions from Knime with this repo. More likely, a slicker way to accomplish keeping the code up to date would be determined and adopted.    
   
 *************** Getting the jsView from Knime Labs *******************  
   
